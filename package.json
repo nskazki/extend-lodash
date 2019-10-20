@@ -1,26 +1,24 @@
 {
   "name": "extend-lodash",
+  "author": "nskazki@gmail.com",
+  "license": "MIT",
   "version": "1.0.0",
-  "description": "just my helpers",
-  "main": "index.js",
-  "dependencies": {
-    "lodash": "^3.10.1"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "description": "This module has been deprecated try https://github.com/lodash/lodash",
+  "homepage": "https://github.com/nskazki/extend-lodash",
+  "keywords": [
+    "lodash"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nskazki/extend-lodash.git"
   },
-  "keywords": [
-    "lodash"
-  ],
-  "author": "nskazki@gmail.com",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/nskazki/extend-lodash/issues"
   },
-  "homepage": "https://github.com/nskazki/extend-lodash#readme"
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "lodash": "^3.10.1"
+  }
 }
