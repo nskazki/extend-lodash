@@ -122,3 +122,42 @@ function strLength() {
     var args = toArray(arguments)
     return spread(castToString)(args).length
 }
+
+// v3 -> v4
+
+lodash.all = lodash.every
+lodash.any = lodash.some
+lodash.backflow = lodash.flowRight
+lodash.callback = lodash.iteratee
+lodash.collect = lodash.map
+lodash.compose = lodash.flowRight
+lodash.contains = lodash.includes
+lodash.detect = lodash.find
+lodash.findWhere = NotSupported('findWhere')
+lodash.foldl = lodash.reduce
+lodash.foldr = lodash.reduceRight
+lodash.include = lodash.includes
+lodash.indexBy = NotSupported('indexBy')
+lodash.inject = lodash.reduce
+lodash.methods = lodash.functions
+lodash.modArgs = NotSupported('modArgs')
+lodash.object = lodash.zipObject
+lodash.padLeft = lodash.padStart
+lodash.padRight = lodash.padEnd
+lodash.pairs = NotSupported('pairs')
+lodash.pluck = NotSupported('pluck')
+lodash.restParam = NotSupported('restParam')
+lodash.select = lodash.filter
+lodash.sortByAll = NotSupported('sortByAll')
+lodash.sortByOrder = NotSupported('sortByOrder')
+lodash.trimLeft = lodash.trimStart
+lodash.trimRight = lodash.trimEnd
+lodash.trunc = NotSupported('trunc')
+lodash.unique = lodash.uniq
+lodash.where = NotSupported('where')
+
+function NotSupported(name) {
+    return function notSupported() {
+        throw new Error(name + ' is not supported in lodash@4 - try to find a replacer or rollback to extend-lodash@1.0.0')
+    }
+}
