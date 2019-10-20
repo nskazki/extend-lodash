@@ -2,7 +2,7 @@
   "name": "extend-lodash",
   "author": "nskazki@gmail.com",
   "license": "MIT",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "This module has been deprecated try https://github.com/lodash/lodash",
   "homepage": "https://github.com/nskazki/extend-lodash",
   "keywords": [
