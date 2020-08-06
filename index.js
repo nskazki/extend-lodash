@@ -158,8 +158,8 @@ lodash.where = NotSupported('where')
 
 function NotSupported(name) {
     return function notSupported() {
-        console.error(new Error(name + ' is not supported in lodash@4 - try to find a replacer or rollback to extend-lodash@1.0.0'))
-        const method = require('./lodash-v3/' + name)
+        console.error(new Error(name + ' is not supported by lodash@4 - try to find a replacement or rollback to extend-lodash@1.0.0'))
+        var method = require('./lodash-v3/' + name)
         return method.apply(null, arguments)
     }
 }

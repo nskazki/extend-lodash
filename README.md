@@ -8,7 +8,7 @@ yarn add extend-lodash
 
 This module has been deprecated try [lodash](https://github.com/lodash/lodash)
 
-## Methods exported from `lodash@3` that may be vulnerable
+## Methods extracted from `lodash@3` that may be vulnerable
 
 * findWhere
 * indexBy
@@ -34,7 +34,7 @@ This module has been deprecated try [lodash](https://github.com/lodash/lodash)
 * parallel
 * strLength
 
-## Extra methods exported from `String.prototype`
+## Extra methods re-exported from `String.prototype`
 
 * anchor
 * big
